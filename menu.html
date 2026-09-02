@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bistro & Café - Menú</title>
+    <title> Menú</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <style>
         * {
@@ -96,14 +96,10 @@
         </div>
         
         <div class="controls">
-            <button onclick="prevPage()">← Anterior</button>
-            <span class="page-info">Página <span id="pageNum">1</span> de <span id="pageCount">1</span></span>
-            <button onclick="nextPage()">Siguiente →</button>
+            
         </div>
         
-        <div class="pdf-container">
-            <canvas id="pdfCanvas"></canvas>
-        </div>
+       
     </div>
 
     <script>
@@ -168,7 +164,7 @@
             renderPage(pageNum);
         }).catch(function(error) {
             console.error('Error al cargar el PDF:', error);
-            alert('No se pudo cargar el menú. Verifica que el archivo menu.pdf esté en la misma carpeta.');
+            alert('No se pudo cargar el menú.');
         });
         
         // Adaptarse al cambio de tamaño
